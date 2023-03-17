@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curso en línea</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Buscar curso</a></li>
+				<li><a href="#">Crear curso</a></li>
+				<li><a href="#">Cerrar sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="login">
+			<h2>Iniciar sesión</h2>
+			<form>
+				<label for="username">Usuario:</label>
+				<input type="text" id="username" name="username"><br>
+
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password"><br>
+
+				<input type="submit" value="Iniciar sesión">
+			</form>
+			<p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+		</section>
+
+		<section id="register">
+			<h2>Registro</h2>
+			<form>
+				<label for="name">Nombre completo:</label>
+				<input type="text" id="name" name="name"><br>
+
+				<label for="email">Correo electrónico:</label>
+				<input type="email" id="email" name="email"><br>
+
+				<label for="username">Usuario:</label>
+				<input type="text" id="username" name="username"><br>
+
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password"><br>
+
+				<input type="submit" value="Registrarse">
+			</form>
+		</section>
+
+		<section id="courses">
+			<h2>Cursos disponibles</h2>
+			<input type="text" id="search" name="search" placeholder="Buscar cursos"><br>
+			<ul>
+				<li><a href="#">Curso 1</a></li>
+				<li><a href="#">Curso 2</a></li>
+				<li><a href="#">Curso 3</a></li>
+			</ul>
+		</section>
+
+		<section id="create-course">
+			<h2>Crear un curso</h2>
+			<form>
+				<label for="title">Título del curso:</label>
+				<input type="text" id="title" name="title"><br>
+
+				<label for="description">Descripción del curso:</label>
+				<textarea id="description" name="description"></textarea><br>
+
+				<label for="videos">Cantidad de videos:</label>
+				<input type="number" id="videos" name="videos" min="1" max="10"><br>
+
+				<label for="video">Video inicial:</label>
+				<input type="file" id="video" name="video"><br>
+
+				<input type="submit" value="Crear curso">
+			</form>
+	
